@@ -11,7 +11,12 @@ function myFunction(e) {
         if(displayedNum !== "FF") {
             hexStr = parseInt(displayedNum,16)
             hexStr += 1
-            display.textContent = hexStr.toString(16).toUpperCase()
+            if (hexStr < 16) {
+                display.textContent = "0" + hexStr.toString(16).toUpperCase()
+            } else {
+                display.textContent = hexStr.toString(16).toUpperCase()
+            }
+            
             console.log(display.textContent)
         } else {
             display.textContent = '0'
