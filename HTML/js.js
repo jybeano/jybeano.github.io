@@ -19,7 +19,7 @@ function myFunction(e) {
             
             console.log(display.textContent)
         } else {
-            display.textContent = '0'
+            display.textContent = '00'
             console.log(display.textContent)
         }
     }
